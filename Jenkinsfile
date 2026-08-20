@@ -22,7 +22,7 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage ('artifact') {
+        stage ('validation') {
             steps {
                 sh 'mvn package'
             }
